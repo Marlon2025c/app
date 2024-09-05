@@ -278,17 +278,17 @@
 
     <section>
 
-        <h1>About this page <?= date('Y-m-d H:i:s') ?> salut/h1>
+        <h1>About this page <?= date('Y-m-d H:i:s') ?> salut le monde</h1>
 
-            <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+        <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
-            <p>If you would like to edit this page you will find it located at:</p>
+        <p>If you would like to edit this page you will find it located at:</p>
 
-            <pre><code>app/Views/welcome_message.php</code></pre>
+        <pre><code>app/Views/welcome_message.php</code></pre>
 
-            <p>The corresponding controller for this page can be found at:</p>
+        <p>The corresponding controller for this page can be found at:</p>
 
-            <pre><code>app/Controllers/Home.php</code></pre>
+        <pre><code>app/Controllers/Home.php</code></pre>
 
     </section>
 
