@@ -13,12 +13,12 @@ DATE=$(date '+%Y-%m-%d %H:%M:%S')
 cd $PROJECT_DIR
 
 # Mettre à jour le projet et enregistrer les résultats dans le fichier de log
-echo "[$DATE] Début de la mise à jour du projet..." >> $LOG_FILE
+notify-send "[$DATE] Début de la mise à jour du projet..." >> $LOG_FILE
 git pull origin main >> $LOG_FILE 2>&1
 
 # Enregistrer le statut de la mise à jour
 if [ $? -eq 0 ]; then
-    echo "[$DATE] Mise à jour réussie." >> $LOG_FILE
+    notify-send "[$DATE] Mise à jour réussie." >> $LOG_FILE
 else
-    echo "[$DATE] Échec de la mise à jour." >> $LOG_FILE
+    notify-send "[$DATE] Échec de la mise à jour." >> $LOG_FILE
 fi
