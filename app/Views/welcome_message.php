@@ -278,7 +278,7 @@
 
     <section>
 
-        <h1>About this page <?= date('Y-m-d H:i:s') ?> salut</h1>
+        <h1>About this page <?= date('Y-m-d H:i:s') ?> saluttttt</h1>
 
         <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
