@@ -15,7 +15,7 @@
 
 <body>
     <div class="login">
-        <img src="<?php include(APPPATH . "public/assets/img/login-bg.png") ?>" alt="login image" class="login__img">
+        <img src="<?php include(APPPATH . "/public/assets/img/login-bg.png") ?>" alt="login image" class="login__img">
 
         <form action="" class="login__form">
             <h1 class="login__title">Login</h1>
@@ -59,7 +59,7 @@
     </div>
 
     <!--=============== MAIN JS ===============-->
-    <script src="public/assets/js/main.js" )"></script>
+    <script src="/public/assets/js/main.js" )"></script>
 </body>
 
 </html>
