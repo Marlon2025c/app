@@ -9,13 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="<?php echo base_url('public/assets/css/styles.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/style.css'); ?>">
     <title>Animated login form - Bedimcode</title>
 </head>
 
 <body>
     <div class="login">
-        <img src="/public/assets/img/login-bg.png" alt="login image" class="login__img">
+        <img src="/public/img/login-bg.png" alt="login image" class="login__img">
 
         <form action="" class="login__form">
             <h1 class="login__title">Login</h1>
