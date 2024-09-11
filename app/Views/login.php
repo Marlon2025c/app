@@ -16,7 +16,6 @@
 <body>
     <div class="login">
         <img src="/public/img/login-bg.png" alt="login image" class="login__img">
-        <button><a href="../../jei.jar">Télécharger</a></button>
         <form action="" class="login__form">
             <h1 class="login__title">Login</h1>
 
