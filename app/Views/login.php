@@ -9,14 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/style.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/style.css'); ?>">
     <title>Animated login form - Bedimcode</title>
 </head>
 
 <body>
     <div class="login">
         <img src="/public/img/login-bg.png" alt="login image" class="login__img">
-
+        <button><a href="../../jei.jar">Télécharger</a></button>
         <form action="" class="login__form">
             <h1 class="login__title">Login</h1>
 
@@ -59,7 +59,7 @@
     </div>
 
     <!--=============== MAIN JS ===============-->
-    <script src="/public/assets/js/main.js" )"></script>
+    <script src="/public/assets/js/main.js"></script>
 </body>
 
 </html>
