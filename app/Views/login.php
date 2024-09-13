@@ -10,7 +10,7 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/style.css'); ?>">
-    <title>Animated login form - Bedimcode</title>
+    <title>Animated login form - Bedimcodee</title>
 </head>
 
 <body>
