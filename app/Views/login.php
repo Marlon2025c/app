@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/style.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css'); ?>">
     <title>Animated login form - Bedimcodee</title>
 </head>
 
@@ -58,7 +58,7 @@
     </div>
 
     <!--=============== MAIN JS ===============-->
-    <script src="/var/www/html/app/public/assets/js/main.js"></script>
+    <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </body>
 
 </html>
