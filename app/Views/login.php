@@ -58,7 +58,7 @@
     </div>
 
     <!--=============== MAIN JS ===============-->
-    <script src="/public/assets/js/main.js"></script>
+    <script src="/var/www/html/app/public/assets/js/main.js"></script>
 </body>
 
 </html>
