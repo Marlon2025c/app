@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/style.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('var/www/html/app/public/css/style.css'); ?>">
     <title>Animated login form - Bedimcodee</title>
 </head>
 
