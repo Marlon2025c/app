@@ -8,11 +8,10 @@ class Home extends BaseController
     {
         $db = \Config\Database::connect();
         if ($db->connID) {
-            return 'Connexion réussie à la base de données !';
+            return view('login');
         } else {
             return 'Échec de la connexion à la base de données.';
         }
-        return view('login');
     }
 
     function welcome(): string
