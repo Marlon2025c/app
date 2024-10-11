@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
 use CodeIgniter\Database\Exceptions\DatabaseException;
 
 class Home extends BaseController
@@ -11,17 +10,20 @@ class Home extends BaseController
     {
         try {
             $db = \Config\Database::connect();
+
+            // Vérifie si la connexion a réussi
             if ($db->connID) {
                 return view('login');
             } else {
-                return 'Échec de la connexion à la base de données.';
+                // Affiche une erreur personnalisée
+                return 'Échec de la connexion à la base de données. Vérifiez les paramètres de connexion.';
             }
         } catch (DatabaseException $e) {
-            // Capturer les exceptions de base de données
-            return 'Erreur de connexion à la base de données : ' . $e->getMessage();
-        } catch (\Exception $e) {
-            // Capturer les autres exceptions
+            // Affiche les détails de l'erreur
             return 'Une erreur est survenue : ' . $e->getMessage();
+        } catch (\Exception $e) {
+            // Gère d'autres exceptions
+            return 'Une erreur inattendue est survenue : ' . $e->getMessage();
         }
     }
 
