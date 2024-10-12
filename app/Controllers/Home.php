@@ -1,5 +1,5 @@
  <?php
-
+    namespace App\Controllers;
 ##  namespace App\Controllers;
 
 ## use CodeIgniter\Database\Exceptions\DatabaseException;
@@ -18,7 +18,6 @@
         ## return view('welcome_message');
     ## }
 ## }
-namespace App\Controllers;
 
 use App\Models\UserModel;
 
