@@ -4,9 +4,9 @@ namespace App\Controllers;
 
 use App\Models\UserModel;
 
-class UserController extends BaseController
+class Home extends BaseController
 {
-    public function index()
+    public function index(): string
     {
         $userModel = new UserModel();
 
@@ -17,7 +17,7 @@ class UserController extends BaseController
         return view('users/index', $data);
     }
 
-    public function getUser($id)
+    public function getUser($id): string
     {
         $userModel = new UserModel();
 
