@@ -4,47 +4,27 @@ namespace App\Controllers;
 
 use App\Models\UserModel;
 
-class Home extends BaseController
+class UserController extends BaseController
 {
-    public function index(): string
+    public function index()
     {
         $userModel = new UserModel();
 
-        // Récupérer tous les utilisateurs
-        $data['users'] = $userModel->findAll();
+        // Exécution de la requête pour récupérer les utilisateurs
+        $results = $userModel->findAll();
 
-        // Charger une vue avec les données récupérées
+        // Vérification si la requête a échoué
+        if ($results === false) {
+            // Affiche l'erreur SQL
+            $dbError = $this->db->error();
+            echo 'Erreur SQL : ' . $dbError['message'];
+            return;
+        }
+
+        // Si tout est OK, assigner les données récupérées
+        $data['users'] = $results;
+
+        // Retourner la vue
         return view('users/index', $data);
     }
-
-    public function getUser($id): string
-    {
-        $userModel = new UserModel();
-
-        // Récupérer un utilisateur spécifique par son ID
-        $data['user'] = $userModel->find($id);
-
-        // Charger une vue ou traiter les données
-        return view('users/detail', $data);
-    }
 }
-
-
-##  namespace App\Controllers;
-
-## use CodeIgniter\Database\Exceptions\DatabaseException;
-
-## class Home extends BaseController
-## {
-   ##  public function index(): string
-    ## {
-       ##  $db = \Config\Database::connect();
-        ## $db->connID;
-        ## return view('login');
-    ## }
-
-    ## public function welcome(): string
-    ## {
-        ## return view('welcome_message');
-    ## }
-## }

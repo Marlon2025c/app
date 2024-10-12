@@ -2,16 +2,14 @@
 
 namespace App\Models;
 
-use CodeIgniter\Model;
+    $builder = $this->db->table('users');
+    $results = $builder->get();
 
-class UserModel extends Model
-{
-    protected $table = 'users'; // Nom de la table dans la base de données
-    protected $primaryKey = 'id'; // Clé primaire de la table
+    if ($results === false) {
+        // Affiche l'erreur SQL
+        $dbError = $this->db->error();
+        echo 'Erreur SQL : ' . $dbError['message'];
+        return;
+    }
 
-    // Colonnes que tu veux pouvoir manipuler
-    protected $allowedFields = ['username', 'email', 'password'];
-
-    // Si tu veux utiliser les dates automatiques (created_at, updated_at)
-    protected $useTimestamps = true;
-}
+    $data['users'] = $results->getResult();
