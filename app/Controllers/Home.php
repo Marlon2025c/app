@@ -23,7 +23,6 @@ class Home extends BaseController
 
         // Récupérer un utilisateur spécifique par son ID
         $data['user'] = $userModel->find($id);
-
         // Charger une vue ou traiter les données
         return view('users/detail', $data);
     }
