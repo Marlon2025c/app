@@ -33,7 +33,7 @@ class Database extends Config
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
-        'DBDebug'      => (ENVIRONMENT !== 'production'),
+        'DBDebug'      => true,
         'charset'      => 'utf8',
         'port'         => 3306,
         'DBCollat'     => 'utf8mb4_general_ci',
