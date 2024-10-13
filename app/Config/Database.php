@@ -24,7 +24,7 @@ class Database extends Config
      *
      * @var array<string, mixed>
      */
-    public $default = [
+    public array $default = [
         'DSN'      => 'mysql:host=192.168.1.177;dbname=Spazia;charset=utf8mb4',
         'hostname' => '',
         'username' => 'marlon2025c',
@@ -44,6 +44,11 @@ class Database extends Config
         'strictOn' => false,
         'failover' => [],
         'port'     => 3306,
+        'dateFormat'   => [
+            'date'     => 'Y-m-d',
+            'datetime' => 'Y-m-d H:i:s',
+            'time'     => 'H:i:s',
+        ],
     ];
 
     //    /**
