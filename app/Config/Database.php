@@ -30,7 +30,7 @@ class Database extends Config
         'username'     => 'marlon2025c',
         'password'     => 'Spazia2025!!',
         'database'     => 'Spazia',
-        'DBDriver'     => 'MySQL',
+        'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
         'DBDebug'      => true,
