@@ -18,7 +18,8 @@ class Home extends BaseController
             if ($db->connID) {
                 echo 'Connexion réussie via Config\Database::connect()';
             } else {
-                echo 'Erreur lors de la connexion: ' . $db->error();
+                $error = $db->error();
+                echo 'Erreur lors de la connexion: ' . $error['message'] ?? 'Erreur inconnue';
             }
             return view('login');
         }
