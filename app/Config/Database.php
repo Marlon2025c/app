@@ -35,6 +35,7 @@ class Database extends Config
         'pConnect'     => false,
         'DBDebug'      => (ENVIRONMENT !== 'production'),
         'charset'      => 'utf8',
+        'port'         => 3306,
         'DBCollat'     => 'utf8mb4_general_ci',
         'swapPre'      => '',
         'encrypt'      => false,
