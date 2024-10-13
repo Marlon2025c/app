@@ -25,12 +25,11 @@ class Database extends Config
      * @var array<string, mixed>
      */
     public array $default = [
-        'DSN'      => 'mysql:host=192.168.1.177;dbname=Spazia;charset=utf8mb4',
-        'hostname' => '',
+        'hostname' => '192.168.1.177',
         'username' => 'marlon2025c',
         'password' => 'Spazia2025!!',
         'database' => 'Spazia',
-        'DBDriver' => 'pdo', // Remplacer ici par 'pdo'
+        'DBDriver' => 'MySQLi', // Remplacer par 'MySQLi'
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),
