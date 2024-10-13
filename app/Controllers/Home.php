@@ -17,11 +17,9 @@ class Home extends BaseController
             $db = \Config\Database::connect();
             if ($db->connID) {
                 echo 'Connexion réussie via Config\Database::connect()';
-                return view('login');
             } else {
-                echo 'Erreur lors de la connexion';
+                echo 'Erreur lors de la connexion: ' . $db->error();
             }
-            echo phpinfo();
             return view('login');
         }
 
