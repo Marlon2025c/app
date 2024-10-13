@@ -21,6 +21,7 @@ class Home extends BaseController
             } else {
                 echo 'Erreur lors de la connexion';
             }
+            echo phpinfo();
             return view('login');
         }
 
