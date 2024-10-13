@@ -27,7 +27,7 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => '192.168.1.177',
-        'username'     => 'marlon2025c',
+        'username'     => 'root',
         'password'     => 'Spazia2025!!',
         'database'     => 'Spazia',
         'DBDriver'     => 'MySQLi',

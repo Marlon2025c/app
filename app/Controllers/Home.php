@@ -12,7 +12,7 @@ class Home extends BaseController
             } else {
                 echo "Connexion échouée !";
             }
-
+            
             return view('login');
         }
 
