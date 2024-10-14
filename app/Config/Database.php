@@ -25,7 +25,7 @@ class Database extends Config
      * @var array<string, mixed>
      */
     public array $default = [
-        'hostname' => '192.168.1.177',
+        'hostname' => '82.66.194.176',
         'username' => 'marlon2025c',
         'password' => 'Spazia2025!!',
         'database' => 'Spazia',
